@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<addon id="plugin.video.filmboxlive-hu" name="FILMBOX LIVE Magyarország" version="1.0.1" provider-name="c0d34fun/magyarítás-rézbagoly">
+  <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+  	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="hu"></summary>
+	<summary lang="hu">VOD szolgáltatás az SPI International számára</summary>
+  	<description lang="hu">A filmboxlive.com-on élvezheti a nagyszerű filmeket és izgalmas TV-csatornákat.  A tartalmakat többféle eszközön nézheti, egy előfizetéssel.</description>
+	<disclaimer lang="hu">Ez nem egy hivatalos addon! Ha egy hivatalos alkalmazás elérhető a platformhoz, használja azt ehelyett a kiegészítő helyett. A név, a logó az SPI International védjegye, és a rendelkezésre álló tartalomra szerzői és az ahhoz kapcsolódó jogok vonatkoznak. Ez az addon a GPL2 licenc alatt kerül forgalomba.</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  	<website>http://www.filmboxlive.com/hu/</website>
+  	<news>Ebben a verzióban működik a kereső, a kategóriák szerinti lebontás, a léptetés és az élő csatornák! Ismert hiba: a sorozatoknál, amennyiben létezik önálló fájl, a megfelelő címmel, akkor csak azt listázza, nem a könyvtárat.</news>
+  	<assets>
+	   <icon>resources/icon.png</icon>
+	</assets>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>

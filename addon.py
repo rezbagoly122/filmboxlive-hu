@@ -84,10 +84,6 @@ def add_item(name, image, is_folder, is_playble, payload, info_labels={}):
     list_item.setArt({'thumb': image, 'poster': image,
                       'banner': image, 'fanart': image})
 
-    handle = addon_handle
-    url = build_url(payload)
-    listitem = list_item
-    isFolder = is_folder
     xbmcplugin.addDirectoryItem(
         handle=addon_handle,
         url=url,

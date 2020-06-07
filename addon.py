@@ -146,9 +146,7 @@ def play():
             verify=False,
             headers={'User-Agent': MUA, 'Referer': url}
         ).text
-        manifest = final_url + '?' + response + \
-            '&device=Google&userID='+userid+'&domain=filmbox'
-#        f.write(str(manifest))
+        manifest = final_url + '?' + response + '&device=Google&userID='+userid+'&domain=filmbox'
         if 'mp4' in final_url:
             play_item = xbmcgui.ListItem(path=manifest)
             xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)

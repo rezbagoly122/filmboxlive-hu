@@ -33,7 +33,7 @@ elif is_py3:
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
 params = dict(parse_qsl(sys.argv[2][1:]))
-addon = xbmcaddon.Addon(id='plugin.video.filmboxlive-hu')
+addon = xbmcaddon.Addon(id='plugin.video.filmboxlivehu')
 resources = xbmc.translatePath(addon.getAddonInfo('path') + '/resources/')
 main_url = 'http://filmboxliveapp.net/cmsendpoint.json'
 api_url = 'https://api.invideous.com'

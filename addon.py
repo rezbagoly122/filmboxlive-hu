@@ -415,10 +415,6 @@ def home():
     add_folder('Filmek', '', {'mode': 'movies'})
     add_folder('Sorozatok', '', {'mode': 'list', 'searchName': 'SERIES1'})
     add_folder('Élő adások', '', {'mode': 'LiveTV'})
-    if not addon.getSetting('savefolder') == 'Nincs megadva!':
-        xbmcplugin.addDirectoryItem(handle=addon_handle, url=addon.getSetting(
-            'savefolder'),listitem=xbmcgui.ListItem('Letöltések'),isFolder=True)
-    xbmcplugin.endOfDirectory(addon_handle)
 
 
 if __name__ == '__main__':

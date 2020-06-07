@@ -174,7 +174,7 @@ def login():
         xbmcgui.Dialog().ok('Filmbox Live',
                         'Add meg a felhasználói azonosítót a beállításokban.')
         addon.openSettings()
-        return login()
+        return False
     data = {
         'username': username,
         'password': password,

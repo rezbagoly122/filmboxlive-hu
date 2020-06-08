@@ -1,0 +1,4 @@
+1.0.0 Inital version with errors in serial libraries
+1.0.1 Serial libraries corrected, code cleaning in live channels
+1.0.2 Initial version running python 2 and 3
+1.0.2b code cleaning for login
